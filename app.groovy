@@ -6,6 +6,7 @@ class MyBootApp {
   @ResponseBody
   def top(ModelAndView mv) {
     mv.setViewName("index")
-    mv
+    mv.addObject("title", "Hello!")
+    mv.addObject("msg", "welcome to Thymeleaf!!")
   }
 }
